@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -34,6 +35,6 @@ public class MapExercises {
                 map.put(word, 1);
             }
         }
-        return counts;
+        return map;
     }
 }
