@@ -24,6 +24,8 @@ public class UnionFindTest {
     /**
      * Checks that invalid inputs are handled correctly.
      */
+
+
     @Test
     public void illegalFindTest() {
         UnionFind uf = new UnionFind(4);
