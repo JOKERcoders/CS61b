@@ -1,6 +1,6 @@
 package browser;
 
-import com.google.gson.Gson;
+import   com.google.gson.Gson;
 import spark.QueryParamsMap;
 import spark.Request;
 import spark.Response;
@@ -52,7 +52,7 @@ public abstract class NgordnetQueryHandler implements Route {
     @Override
     public String handle(Request request, Response response) throws Exception {
         QueryParamsMap qm = request.queryMap();
-        NgordnetQuery nq = readQueryMap(qm);
+        browser.NgordnetQuery nq = readQueryMap(qm);
         String queryResult = handle(nq);
         return gson.toJson(queryResult);
     }
